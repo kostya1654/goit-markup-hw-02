@@ -90,7 +90,8 @@ text-decoration: underline;
 
         color: var(--accent-color)
 }
-.header-mail:hover{
+.header-mail:hover,
+.header-mail:focus{
     text-decoration: underline;
 }
 .header-tel{
@@ -136,9 +137,8 @@ text-decoration: underline;
 }
 
 /*-----------------------------------Speciality-----------------------------------*/
-.speciality{
+
     
-}
 .speciality-title{
     font-weight: 700;
         font-size: 14px;
@@ -186,7 +186,6 @@ font-weight: 700;
 
 .team-subtitle{
 
-font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -212,7 +211,7 @@ font-weight: 500;
 }
 
 .address-link{
-    font-weight: 400;
+    
     font-style: normal;
         font-size: 14px;
         line-height: 1.71;
@@ -227,7 +226,7 @@ font-weight: 500;
     text-decoration-color: var(--accent-color);
 }
 .footer-tel{
-    font-weight: 400;
+   
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
@@ -238,7 +237,6 @@ font-weight: 500;
 
 
 .footer-mail{
-    font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
@@ -261,9 +259,8 @@ font-weight: 500;
 .portfolio-btn{
     background-color: #F5F4FA;
     color: var(--main-title-color);
-
-    font-weight: 500;
-        font-size: 16px;
+        
+    font-size: 16px;
         line-height: 1.62;
         text-align: center;
         letter-spacing: 0.03em;
@@ -296,3 +293,5 @@ font-weight: 500;
 
         color: var(--main-text-color);
 }
+
+/* ТЗ № «С5» Текст контактов в хедере и футере меняет цвет при ховере и фокусе. это ТЗ не совпадает с макетом */
