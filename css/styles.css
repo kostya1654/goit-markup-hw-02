@@ -54,24 +54,32 @@ h3 {
   cursor: pointer;
 }
 
+.section.no-padding{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 /*------------------------------------------Header---------------------------------------------*/
 
 .header {
   background-color: #ffffff;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  
 }
 
 .header-logo {
-  font-family: 'Raleway', sans-serif;
+ display: inline-block;
+    font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 0.83;
   letter-spacing: 0.03em;
   color: #212121;
   text-decoration: none;
-}
 
+  padding-top: 25px;
+}
+.header-list-item{
+    padding: 32px 0px;
+}
 .header-logo span,
 footer span {
   color: var(--accent-color);
@@ -83,28 +91,34 @@ footer span {
   font-size: 14px;
   line-height: 0.87;
   letter-spacing: 0.02em;
+  padding: 15px;
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
 .header-mail {
+    display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 0.87;
   letter-spacing: 0.02em;
 
   color: #757575;
+  padding: 32px 0px;
 }
 .header-mail:hover,
 .header-mail:focus {
   color: var(--accent-color);
 }
 .header-tel {
+    display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 0.87;
   letter-spacing: 0.02em;
+  padding: 32px 0px;
+  margin-left: 50px;
 
   color: #757575;
 }
@@ -118,21 +132,21 @@ footer span {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  
+}
+.hero>.container{
+width: 696px;
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
 
-  color: #ffffff;
-
-  padding: 0px 452px 0px;
-  min-width: 1600px;
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 .hero-btn {
   display: inline-block;
@@ -142,7 +156,7 @@ footer span {
   line-height: 1.88;
   display: flex;
   align-items: center;
-  text-align: center;
+
 
   background-color: var(--accent-color);
   color: #ffffff;
@@ -152,14 +166,14 @@ footer span {
   border: 1px solid transparent;
   min-width: 200px;
   text-align: center;
-  margin-left: 700px;
-  margin-right: 700px;
+  margin: 0px auto;
 }
 
 /*-----------------------------------Speciality-----------------------------------*/
 .speciality {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #ffffff;
 }
 .speciality-title {
   font-weight: 700;
@@ -183,12 +197,11 @@ footer span {
   color: var(--main-text-color);
 }
 
-.speciality-list {
-}
 
 /*-------------------------------------------Work--------------------------------*/
 .work {
   padding-bottom: 94px;
+  background-color: #ffffff;
 }
 .work-title {
   font-weight: 700;
@@ -220,6 +233,16 @@ footer span {
   margin-bottom: 50px;
 }
 
+.box{
+    width: 270px;
+    margin: 0 auto;
+}
+
+.box-item{
+    min-width: 270px;
+    outline: 1px solid blue;
+    background-color: #ffffff;
+}
 .team-subtitle {
   font-size: 16px;
   line-height: 1.18;
@@ -244,13 +267,12 @@ footer span {
 
 .footer {
   background-color: #2f303a;
-
-  padding-top: 60px;
-  padding-bottom: 60px;
+padding: 60px 0px;
 }
 
 .footer-logo {
-  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+    font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 0.83;
@@ -285,12 +307,14 @@ footer span {
   color: var(--accent-color);
 }
 .footer-tel {
-  display: block;
+  display: inline-block;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+
+  padding: 15px 0px;
 }
 .footer-tel:hover,
 .footer-tel:focus {
@@ -304,6 +328,7 @@ footer span {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 
+  padding: 15px 0px;
   margin-bottom: 9px;
 }
 .footer-mail:hover,
